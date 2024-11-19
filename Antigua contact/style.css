@@ -206,7 +206,7 @@ input:valid + .labelline{
     display: flex;
     flex-direction: column;
     margin: 3rem;
-    border-right: black solid;
+    
 }
 .location {
     display: flex;
