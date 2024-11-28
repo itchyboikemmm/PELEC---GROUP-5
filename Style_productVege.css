@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+  }
+  /* Sign In Button Styling */
+.signin-btn {
+  background-color: rgb(161, 99, 33); /* Gold color for the button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Ensures it behaves like a block but on the same line */
+}
+
+.signin-btn:hover {
+  background-color: #FFCC00; /* Lighter gold color on hover */
+  transform: scale(1.05); /* Slightly increases size on hover */
+}
+  html {
+    scroll-behavior: smooth;
+    background-color: #000;
+  }
+  
+  
+  /* background */
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 200px;
+    cursor: pointer;
+  /* ito yung navigation bar */
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Antiqua';
+    font-size: larger;
+  }
+  /* ito ay para sa style at effects nung nav bar */
+  .navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+  }
+  /* ito yung hovering effect once na malapatan yung nav bar */
+  .navbar ul li:hover:after{
+    width: 100%;
+  }
+  /* igitna ko yung text */
+  .hero-text {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  .products{
+    border: 10px solid rgb(172, 97, 40);
+    background-color: #eae0d5;
+    
+  }
+  
+  .logo2{
+    padding-left: 20px;
+    padding-top: 25px;
+    width: 300px;
+    cursor: pointer;
+  }
+  .navbarprod{
+    width: 85%;
+    margin-top: 70px;
+    margin-left: 65px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 3px solid #000;
+  }
+  
+  .navbarprod li{
+    font-size: 20px;
+  }
+  .navbarprod ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbarprod ul li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-family: Arial;
+    font-size: larger;
+    transition: font-weight 0.3s ease;
+  
+  }
+  
+  .navbarprod ul li a:hover{
+    font-weight: bold;
+  
+  }
+  
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top:35px;
+  }
+  
+  .search-input {
+    height: 30px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    width: 230px;
+    margin-right: 10px;
+    background-color: #2D303E;
+    color: white;
+  }
+  
+  .search-input::placeholder {
+    color: white;
+  }
+  
+  .fa{
+    font-family: Arial;
+    font-size: 12px;
+    padding: 2px;
+    margin-top: 2px;
+    color: #ffffff;
+    background-color: #000;
+  }
+  
+  .navbarprod ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    transition: 0.5s;
+  }
+  
+  .navbarprod ul li:hover:after{
+    width: 100%;
+  }
+  
+  
+  .products {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .ourmenu {
+    position: absolute; 
+    top: 350px;          
+    left: 90px;        
+    margin: 0;          
+    font-size: 30px;    
+    font-weight: bold;  
+    color: #000000;     
+  }
+  
+  
+  .button-container {
+    position: absolute;
+    top: 330px;
+    left: 930px;
+  }
+  
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    padding: 20px 35px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #1F1D2B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .toggle-label i {
+    font-size: 20px;
+    margin-right: 10px;        
+  }
+  
+  
+  .toggle-input:checked + .toggle-label i {
+    content: "fa fa-arrow-up";  
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+  }
+  
+  
+  .toggle-input:checked + .toggle-label::after {
+    content: "Take Out";  
+  }
+  
+  
+  .toggle-label::after {
+    content: "Dine In";  
+  }
+  
+  
+  .products-container {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; 
+    justify-content: center;
+  }
+  
+  
+  .product-ampalaya, .product-chopsuey, .product-lohan, .product-broccoliwpork, .product-broccoliwcorn, .product-pinakbet, .product-mungbean, .product-kangkong, .product-stirvege {
+    background-color: #1F1D2B;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .product-ampalaya img, .product-chopsuey img, .product-lohan img, .product-broccoliwpork img, .product-broccoliwcorn img, .product-pinakbet img, .product-mungbean img, .product-kangkong img, .product-stirvege img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+  
+  
+  .product-info-ampalaya, .product-info-chopsuey, .product-info-lohan, .product-info-broccoliwpork, .product-info-broccoliwcorn, .product-info-pinakbet, .product-info-mungbean, .product-info-kangkong, .product-info-stirvege {
+    color: #ffffff;
+    margin-top: 20px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  button.add-to-cart-ampalaya, button.add-to-cart-chopsuey, button.add-to-cart-lohan, button.add-to-cart-broccoliwpork, button.add-to-cart-broccoliwcorn, button.add-to-cart-pinakbet, button.add-to-cart-mungbean, button.add-to-cart-kangkong, button.add-to-cart-stirvege{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1F1D2B;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.add-to-cart-ampalaya:hover, button.add-to-cart-chopsuey:hover, button.add-to-cart-lohan:hover, button.add-to-cart-broccoliwpork:hover, button.add-to-cart-broccoliwcorn:hover, button.add-to-cart-pinakbet:hover, button.add-to-cart-mungbean:hover, button.add-to-cart-kangkong:hover, button.add-to-cart-stirvege:hover {
+    background-color: rgb(163, 163, 163);
+  }
+  
+  
+  .price-ampalaya, .price-chopsuey, .price-lohan, .price-broccoliwpork, .price-broccoliwcorn, .price-pinakbet, .price-mungbean, .price-kangkong, .price-stirvege {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0;
+  }
+  /* Sign In Button Styling */
+.signin-btn {
+    background-color: rgb(161, 99, 33); /* Gold color for the button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures it behaves like a block but on the same line */
+  }
+  
+  .signin-btn:hover {
+    background-color: #FFCC00; /* Lighter gold color on hover */
+    transform: scale(1.05); /* Slightly increases size on hover */
+  }
+/* Background */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: #b55d23;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    left: 150px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Antiqua';
+    font-size: 25px;
+}
+
+/* Navbar Effects */
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+.burger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none; /* Hide the menu items initially */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .navbar .burger-icon {
+      display: block; /* Show burger icon */
+    }
+  
+    .navbar ul.active {
+      display: flex; /* Show menu when active */
+    }
+  
+   
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+    /* Navbar styling */
+    .navbar {
+      position: fixed; /* Fixed at the top */
+      top: 32px;
+      left: 0;
+      right: 0;
+      background-color: #333; /* Dark background */
+      padding: 10px 20px;
+      width: 100%;
+      z-index: 1000; /* Ensure navbar stays on top of other elements */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for navbar */
+    }
+    
+    /* Logo styling */
+    .navbar .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    
+    /* Navbar links styling */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .navbar ul li {
+      margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 12px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar ul li a:hover {
+      color: #FFD700; /* Gold color on hover */
+    }
+    
+    /* Sign In button styling */
+    .signin-btn {
+      background-color: #FFD700; /* Gold background */
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    
+    .signin-btn:hover {
+      background-color: #FFCC00; /* Lighter gold color on hover */
+    }
+    
+    /* Content Styling (hero-text and images) */
+    .hero-text {
+      padding-top: 80px; /* To make room for the fixed navbar */
+    }
+  
+    
+    .hero-buttons {
+      margin-top: 20px;
+    }
+    
+    .hero-buttons .btn {
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+  
+    
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .navbar ul li {
+        margin-bottom: 10px;
+      }
+    
+      .hero-text h1 {
+        font-size: 24px;
+      }
+    
+      .hero-buttons .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+    
+
+  

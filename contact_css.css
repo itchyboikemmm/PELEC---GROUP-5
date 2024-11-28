@@ -1,0 +1,494 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fixes width calculation issues */
+}
+
+/* Sign In Button Styling */
+    .signin-btn {
+    background-color: rgb(161, 99, 33); /* Gold color for the button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures it behaves like a block but on the same line */
+  }
+  
+  .signin-btn:hover {
+    background-color: #b96319; /* Lighter gold color on hover */
+    transform: scale(1.05); /* Slightly increases size on hover */
+  }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+/* Background */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/antigua_background_home.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    left: 150px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Antiqua';
+    font-size: 25px;
+}
+
+/* Navbar Effects */
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+/* input names */
+
+.Contact{
+    padding-bottom: 40px;
+}
+
+body{
+    background: linen;
+}
+/* .container{
+    width: 400px;
+    padding-left: 40px;
+} */
+.entryarea{
+    position: relative;
+    height: 60px;
+    line-height: 45px;
+    top: 100px;
+}
+input{
+    position: absolute;
+    width: 200%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid #975d28;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+    margin-right: 3rem;
+}
+.labelline{
+    position: absolute;
+    font-size: 0.8em;
+    color: #975d28;
+    padding: 0 5px;
+    margin: 0 10px;
+    background-color: linen;
+    transition: 0.2s ease;
+}
+input:focus,
+input:valid{
+    color: #aa7f57;
+    border: 2px solid #aa7f57;
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: #aa7f57;
+    height: 15px;
+    line-height: 20px;
+    padding: 0 12px;
+    transform: translate(-10px, -10px) scale(0.80);
+    z-index: 1111;
+}
+
+/* .container{
+    width: 400px;
+    padding-left: 40px;
+} */
+.entryarea{
+    position: relative;
+    height: 60px;
+    line-height: 45px;
+    margin-left: 20px;
+}
+input{
+    position: absolute;
+    width: 90%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid #975d28;
+    margin-left: 20px;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+
+.labelline{
+    position: absolute;
+    font-size: 0.8em;
+    color: #975d28;
+    padding: 0 5px;
+    margin: 0 10px;
+    margin-left: 30px;
+    background-color: linen;
+    transition: 0.2s ease;
+}
+input:focus,
+input:valid{
+    color: #aa7f57;
+    border: 2px solid #aa7f57;
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: #aa7f57;
+    height: 15px;
+    line-height: 20px;
+    padding: 0 12px;
+    transform: translate(-10px, -10px) scale(0.80);
+    z-index: 1111;
+}
+
+
+
+.condetails{
+    margin-left: 85px;
+    padding-bottom: 2.5rem;
+    font-size: 10px;
+}
+
+/* button css */
+.btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #975d28;
+    width: 140px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: linen;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-bottom: 1rem;
+    margin-left: 45px;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.inputs {
+    padding-bottom: 4rem;
+}
+.contactus {
+    padding-bottom: 0rem;
+    padding-top: 10rem;
+    text-align: center;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    margin-bottom: 10rem;
+    
+}
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    text-align: center;
+}
+
+.line{
+    border-left: 3px solid #9c8066;
+    height: 480px;
+    position: absolute;
+    left: 50%;
+    margin-left: 10px;
+    top: 210px; 
+}
+
+.condetails{
+    margin-left: 5px;
+    padding-bottom: 2.5rem;
+    margin-top: 15px;
+    font-size: 10px;
+    height: 30px;
+}
+
+/* Sign In Button Styling */
+.signin-btn {
+    background-color: rgb(161, 99, 33); /* Gold color for the button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures it behaves like a block but on the same line */
+  }
+  
+  .signin-btn:hover {
+    background-color: #FFCC00; /* Lighter gold color on hover */
+    transform: scale(1.05); /* Slightly increases size on hover */
+  }
+/* Background */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: #b55d23;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
+}
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    left: 150px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: 'Antiqua';
+    font-size: 25px;
+}
+
+/* Navbar Effects */
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+.burger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none; /* Hide the menu items initially */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .navbar .burger-icon {
+      display: block; /* Show burger icon */
+    }
+  
+    .navbar ul.active {
+      display: flex; /* Show menu when active */
+    }
+  
+   
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+    /* Navbar styling */
+    .navbar {
+      position: fixed; /* Fixed at the top */
+      top: 32px;
+      left: 0;
+      right: 0;
+      background-color: #333; /* Dark background */
+      padding: 10px 20px;
+      width: 100%;
+      z-index: 1000; /* Ensure navbar stays on top of other elements */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for navbar */
+    }
+    
+    /* Logo styling */
+    .navbar .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    
+    /* Navbar links styling */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    .navbar ul li {
+      margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 12px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar ul li a:hover {
+      color: #FFD700; /* Gold color on hover */
+    }
+    
+    /* Sign In Button Styling */
+    .signin-btn {
+    background-color: rgb(161, 99, 33); /* Gold color for the button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures it behaves like a block but on the same line */
+  }
+  
+  .signin-btn:hover {
+    background-color: #b96319; /* Lighter gold color on hover */
+    transform: scale(1.05); /* Slightly increases size on hover */
+  }
+    
+    /* Content Styling (hero-text and images) */
+    .hero-text {
+      padding-top: 80px; /* To make room for the fixed navbar */
+    }
+  
+    
+    .hero-buttons {
+      margin-top: 20px;
+    }
+    
+    .hero-buttons .btn {
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+  
+    
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .navbar ul li {
+        margin-bottom: 10px;
+      }
+    
+      .hero-text h1 {
+        font-size: 24px;
+      }
+    
+      .hero-buttons .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+    
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <img src="images/top.png" style="background-color: black;width: 100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigua</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href=
+"images/antigua_logo.png"
+            type="image/icon type" />
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <div class="burger-icon" onclick="toggleMenu()">
+        &#9776; <!-- Burger menu icon -->
+      </div>
+        <img src="images/antigua_logo.png" class="logo">
+        <ul>
+            <li><a href="Pelec.html">Home</a></li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+       <!-- Sign In Button -->
+    <a href="login.html" class="signin-btn">Sign In</a>
+    </div>
+    <div class="image-container">
+        <img src="images/pancit_chami.jpg" alt="Pancit Chami" class="circle-img pancit_chami" onclick="document.location='products.html'">
+    </div>
+    <div class="image-container2">
+      <img src="images/oysterchicken.png" alt="Fried Chicken" class="circle-img fried_chicken"  onclick="document.location='chicken.html'">
+      <img src="images/Calamares.jpg" alt="Siopao" class="circle-img siopao" onclick="document.location='Product-Seafood.html'">
+  </div>
+    <div class="hero-text">
+        <h1>Bringing you fresh flavors from farm to table</h1>
+        <p>Where good food and great moments meet</p>
+        <div class="hero-buttons">
+            <a href="#Book a Table" class="btn primary" onclick="document.location='login.html'"> Book a table</a>
+            <a href="#View our menu" class="btn secondary" onclick="document.location='products.html'">View our menu</a>
+        </div>
+    </div>
+      <img style="width: 1520px;bottom: 100 px;" src="images/briwn.png">
+  
+  </div>
+  
+  <script>
+    // Burger menu toggle function
+    function toggleMenu() {
+      var menu = document.querySelector(".nav-links");
+      menu.classList.toggle("active");
+    }
+  </script>
+  
+  
+</body>
+</head>
+</html>

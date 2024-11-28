@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navbar .logo {
+    width: 120px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+  }
+  
+  .navbar .signin-btn {
+    background-color: #f44;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .burger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .image-container, .image-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img, .image-container2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .hero-text {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .hero-buttons .btn.primary {
+    background-color: #f44;
+    color: white;
+  }
+  
+  .hero-buttons .btn.secondary {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none; /* Hide the menu items initially */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .navbar .burger-icon {
+      display: block; /* Show burger icon */
+    }
+  
+    .navbar ul.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .image-container, .image-container2 {
+      flex-direction: column;
+    }
+  
+    .image-container img, .image-container2 img {
+      width: 150px;
+      height: 150px;
+      margin: 10px 0;
+    }
+  
+    .hero-text h1 {
+      font-size: 24px;
+    }
+  
+    .hero-buttons .btn {
+      font-size: 14px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
