@@ -15,20 +15,21 @@
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     display: inline-block; /* Ensures it behaves like a block but on the same line */
-  }
+}
   
-  .signin-btn:hover {
-    background-color: #b96319; /* Lighter gold color on hover */
-    transform: scale(1.05); /* Slightly increases size on hover */
-  }
+.signin-btn:hover {
+  background-color: #b96319; /* Lighter gold color on hover */
+  transform: scale(1.05); /* Slightly increases size on hover */
+}
+
 /* Background */
 .banner {
-    width: 100%;
-    height: 100%;
-    background-image: url('images/background.jpg') ;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
+  background-image: url('ANTIGUA/images/background.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
 }
 
 /* Navbar */
@@ -79,15 +80,10 @@
 
 /* Image Container */
 .image-container {
-    display: flex;
-    justify-content: center;
-    gap: -30px; /* Adjust for overlap between images */
-    margin-top: 120px;
-}
-.image-container2 {
-    position: relative;
-    top: -50px;   /* Move down */
-    left: 630px;  /* Move right */
+  display: flex;
+  justify-content: center;
+  gap: -30px; /* Adjust for overlap between images */
+  margin-top: 120px;
 }
 .circle-img {
     width: 180px;
@@ -99,19 +95,12 @@
 /* Individual Circle Images */
 .pancit_chami {
     position: relative;
-    left: -10px;
-    z-index: 3;
 }
 .fried_chicken {
     position: relative;
-    right: 60px;
-    z-index: 2;
 }
-.siopao {
+.calamares {
     position: relative;
-    left: -50px;
-    z-index: 1;
-    
 }
 /* Hover Effect for Circle Images */
 .circle-img:hover {
