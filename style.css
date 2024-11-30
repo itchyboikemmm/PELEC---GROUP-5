@@ -207,38 +207,33 @@ html{
 
   /* Image Container */
 .image-container {
-  display: flex;
-  justify-content: center;
-  gap: -30px; /* Adjust for overlap between images */
-  margin-top: 50px;
-}
-.image-container2 {
-  position: relative;
-  top: -100px;   /* Move down */
-  left: 634px;  /* Move right */
+  display: flex; /* Enables flex layout */
+  flex-wrap: wrap; /* Allows images to wrap onto the next row */
+  justify-content: center; /* Centers images horizontally */
+  gap: 5%; /* Adds spacing between images */
+  padding: 5%; /* Adds padding relative to the container width */
+  width: 100%; /* Ensures the container spans full width */
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
 }
 .circle-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 20%; /* Image size scales relative to the container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 50%; /* Keeps the image circular */
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 /* Individual Circle Images */
 .pancit_chami {
   position: relative;
-  left: -10px;
-  z-index: 3;
+
 }
 .fried_chicken {
   position: relative;
-  right: 60px;
-  z-index: 2;
+
 }
 .siopao {
   position: relative;
-  left: -50px;
-  z-index: 1;
+
 }
 }
 
@@ -330,6 +325,13 @@ html{
     text-decoration: none;
     display: inline-block;
   }
+
+  .bottom-banner {
+    width: 100%; /* Makes the image span the full width of the screen */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    margin-top: 20px;
+  }
   
 
   
@@ -351,6 +353,9 @@ html{
     .hero-buttons .btn {
       font-size: 14px;
       padding: 10px 20px;
+    }
+    .bottom-banner {
+      height: 50px;
     }
   }
   
